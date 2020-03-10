@@ -1,0 +1,29 @@
+.expand {
+    position: relative;
+    width: 320px;
+    height: 44px;
+    border: 2px solid;
+    @include inputStyle();
+
+    padding-left: 15px;
+
+    appearance: listbox;
+}
+
+.expand:before {
+    content: "+++++++";
+    display: block;
+    color: #ccc;
+    background: #ccc;
+    position: absolute;
+    top: 0;
+}
+
+option {
+    margin-left: 15px;
+}
+
+.expand::-ms-expand {
+    @include colorprop(color, 50);
+    padding-right: 15px;
+}

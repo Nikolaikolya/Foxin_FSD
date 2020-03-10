@@ -1,0 +1,52 @@
+.nav {
+    display: flex;
+    align-items: center;
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
+    }
+
+    &__item {
+        font-family: "Montserrat-Regular", sans-serif;
+        margin-right: 20px;
+        font-size: 14px;
+        line-height: 17px;
+        @include colorprop(color, 100);
+        position: relative;
+    }
+
+    &__item:last-child {
+        margin-right: 45px;
+    }
+
+    &__sup-menu .nav__link{
+        margin-right: 0;
+    }
+
+    &__link {
+        margin-right: 20px;
+    }
+
+    &__link-drop::after {
+        content: "";
+        display: block;
+        width: 9px;
+        height: 9px;
+        border-top: 2px solid;
+        border-right: 2px solid;
+        position: absolute;
+        top: 53%;
+        right: 0;
+        transform: rotate(135deg);
+        @include colorprop(border-color, 50);
+        transform-origin: 50% 0%;
+        margin-right: -21px;
+    }
+
+    &__link-drop:first-child{
+        margin-right: 0;
+    }
+}

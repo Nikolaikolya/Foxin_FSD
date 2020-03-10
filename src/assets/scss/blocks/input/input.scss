@@ -1,0 +1,16 @@
+.input {
+    @include inputStyle();
+    width: 320px;
+    height: 44px;
+    padding-left: 15px;
+    font-weight: 400;
+}
+
+.input::placeholder {
+    @include colorprop(color, 25);
+}
+
+.input:focus,
+.input:hover {
+    @include colorprop(border-color, 50);
+}

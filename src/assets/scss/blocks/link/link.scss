@@ -1,0 +1,14 @@
+.link {
+    color: $purple-color;
+    font-family: $mainFont;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-style: normal;
+
+    transition: color .2s linear;
+}
+
+.link:hover {
+    @include colorprop(color,50);
+}

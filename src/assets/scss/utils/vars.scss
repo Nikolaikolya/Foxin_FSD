@@ -2,7 +2,7 @@
    ========================================================================== */
 
 // Font
-$mainFont                : 'Montserrat', Helvetica, Arial, sans-serif;
+$mainFont                : 'Montserrat-Regular', sans-serif;
 
 // Size
 $mainFontColor           : #101010;
@@ -23,13 +23,17 @@ $smPhoneWidth            : 320px;
 */
 
 // Main color
-$default-color           : #ffffff;
+$main-color              : #1f2041;
 $primary-color           : #444ce0;
-$success-color           : #26de81;
 $danger-color            : #fc5c65;
 $warning-color           : #fed330;
 $light-color             : #999999;
-$purple-color            : #8854d0;
+
+
+//Project color
+$purple-color            : #BC9CFF;
+$purple-color            : #BC9CFF;
+$success-color           : #6FCF97;
 
 // Neutral Color
 $neutral-primary         : #303133;
